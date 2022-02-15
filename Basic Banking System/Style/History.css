@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@700&display=swap");
+@import "../Style/fixed_social.css";
+
+/* ----------------- Nav Bar Style----------------- */
+* {
+  /* used to select all */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smotthing: antialiased; /* to make all font smooth */
+}
+
+.preloader{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff 
+  url(../Images/loader.gif)
+  no-repeat
+
+  center ;
+  background-size: 450px;
+transition: all 6s ease-in;
+z-index: 99999;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+body {
+    overflow-x: hidden; /* Hide scrollbars */
+  }
+header p {
+  color: #99a8b2;
+  font-family: bebas kai;
+  letter-spacing: 2px;
+  position: relative;
+  bottom: 10px;
+  left: 20px;
+
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+.nav-main {
+  display: flex;
+  width: 100%;
+  max-width: inherit;
+  top: 0;
+  margin: 0 auto;
+  background: linear-gradient(to right, #2b32b2, #1488cc);
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.medium ul {
+  display: flex;
+  margin: 1rem 1rem;
+  align-items: center;
+}
+.medium ul li {
+  list-style: none;
+  display: flex;
+  margin: 0rem 0.5rem;
+  padding: 0.1rem 0.1rem;
+}
+.medium ul li a {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 200;
+  text-decoration: none;
+  color: #fbffff;
+  font-family: "Josefin Sans", sans-serif;
+   padding: 0.5rem 0.2rem;
+
+  position: relative;
+}
+.medium .space{
+    padding: 0 10px;
+}
+.medium .space2{
+  margin-bottom: 5px;
+}
+
+.nav-link {
+    display: block;
+   
+}
+.medium ul li .nav-link::after{
+    content: "";
+    width:0;
+   left: 0;
+    height: 2px;
+ position: absolute;
+    background-color: #FFC947;
+  bottom: 0;
+  margin-bottom: 6px;
+    
+
+transition:all 0.3s ease;
+}
+ul li .nav-link:hover::after{
+   
+transform: scale(1,1);
+width: 100%;
+
+}
+ ul li a:hover {
+  color: #deeeea;
+}
+.nav-main .right img {
+    top:0; 
+    left:0; 
+  width: auto;
+  height: 50px;
+
+}
+
+/* ----------------Nav Bar Social Media Links--------------- */
+.social-link img {
+  width: 29px;
+  height: 29px;
+  padding: 0.38rem 0.38rem;
+  align-items: center;
+  position: relative;
+  margin: 0rem 0.1rem;
+}
+
+/* ------------------Responsive Nav--------------------- */
+
+.toggle,
+.close {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .show {
+    right: 0px;
+  }
+   .nav-main .right img {
+
+  margin-left: -42px;
+
+  padding: 1px 6px;
+}
+
+  header {
+    height: 48px;
+    justify-content: space-between;
+    padding: 10px 40px;
+  }
+  .toggle {
+    display: inline;
+    color: #deeeea;
+    background-color: none;
+    font-size: 24px;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .close {
+    position: absolute;
+    right: 10px;
+    display: inline;
+    background-color: #deeeea;
+    padding: 0.5rem 0.5rem;
+    font-size: 24px;
+    top: 9px;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    background-color: #1488cc;
+    color: #bd081c;
+    width: 60%;
+    height: 100vh;
+    right: -1000px;
+
+    padding: 24px 0;
+z-index: 99997;
+    transition: 0.5s;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 2rem 0;
+  }
+  .nav-link {
+    margin: 1rem 1rem;
+  }
+  .social-link img {
+    margin: -1rem -2.2rem;
+  }
+  .social2{
+    display: none;
+  }
+  footer a span{
+    color: #CAF0F8;
+    font-weight: 500;
+    font-size: 12px;
+ }
+ .hero .herobg {
+  height: 514px!important;   
+  margin: 0px -15px!important;
+}
+}
+/* -----------------footer Design------------------- */
+
+/* footer */
+a {
+  text-decoration: none;
+}
+footer {
+    background: linear-gradient(to right, #2b32b2, #1488cc);
+  padding: 9px 0;
+
+
+  width: 100%;
+
+  color: #fff;
+}
+
+footer p {
+
+  
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 15px;
+       letter-spacing: 0.6px;
+    }
+  footer a{
+    text-decoration: none;
+
+  }
+  footer a span{
+     color: #CAF0F8;
+     font-weight: 500;
+  }
+
+/* -----------------Responsive footer Design------------------- */
+
+/* responsive footer  */
+
+/*---------------- Style for scroll bar ----------- */
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #99a8b2;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 66px;
+  background-color: #222831;
+}
+::-webkit-scrollbar-thumb:hover {
+  height: 66px;
+  background-color: #374045;
+}
+
+.head {
+  height: 150px;
+  width: auto;
+  background-image: linear-gradient(
+      to left,
+      rgba(224, 234, 252,0.4),
+      rgba(0, 4, 40,0.8)
+    ),
+    url(../Images/inner-banner01.png);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.head1{
+  background-image: linear-gradient(
+    to left,
+    rgba(224, 234, 252,0.4),
+    rgba(0, 4, 40,0.8)
+  ),
+  url(../Images/sendmoney.jpg);
+}
+.head2{
+  background-image: linear-gradient(
+    to left,
+    rgba(224, 234, 252,0.4),
+    rgba(0, 4, 40,0.8)
+  ),
+  url(../Images/sendmoneydesk.jpg);
+}
+.head3{
+  background-image: linear-gradient(
+    to left,
+    rgba(224, 234, 252,0.4),
+    rgba(0, 4, 40,0.8)
+  ),
+  url(../Images/send-receive-money.jpg);
+}
+.head h2 {
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 40px;
+  font-size: 28px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.title p {
+  font-family: "Raleway", sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font: 10px;
+  font-weight: 300;
+  color: #f7f6f2;
+  padding: 10px 5px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.history {
+  position: relative;
+}
+/* ------------------ Scroll Button Style ------------------- */
+
+.scroll-btn {
+    cursor: pointer;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+   
+    
+  }
+  
+  .scroll-btn img {
+background-color: #11468F;
+    position: relative;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    padding: 1rem 1rem;
+    box-shadow: 2px 2px 10px #0f1123d5;
+    
+     
+  }
+  .scroll-btn img:hover {
+    background-color:#1b5ebbc0;
+    border:0;
+  
+  }
+  /*---------------- Style for Fixed Social Media Icon ----------- */
+
+.social2{
+  position: fixed;
+  top:50%;
+  left: 0;
+  z-index: 9996;
+  align-content: center;
+  background-color: #222831;
+  transform: translateY(-50%);
+
+}
+
+.social2 .social-link2{
+  
+  display: flex;
+  flex-direction: column;
+
+
+ padding:0.3rem 0.3rem;
+  margin: 0.2rem 0.2rem;
+  top:50%;
+ 
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  outline: none;
+  transition:  0.3s ease-in-out;
+  
+  
+}
+
+.social2 .social-link2:hover{
+
+  background-color: #0061A8;
+ 
+ 
+}
+.social2 .social-link2:hover:nth-child(1){
+
+background-color:#0061A8;
+box-shadow: 0 0 1px #0061A8;
+
+
+}
+.social2 .social-link2:hover:nth-child(2){
+background: #4267B2;
+box-shadow: 0 0 1px #4267B2;
+
+
+}
+.social2 .social-link2:hover:nth-child(3){
+background: #CD201F;
+box-shadow: 0 0 1px #CD201F;
+
+
+}
+.social2 .social-link2:hover:nth-child(4){
+background: #BD081C;
+box-shadow: 0 0 1px #BD081C;
+
+
+}
+.social2 .social-link2:hover:nth-child(5){
+background: #1DA1F2;
+box-shadow: 0 0 1px #1DA1F2;
+
+
+}
+
+.social2 .social-link2 img{
+  
+  width: 30px;
+  height: 30px;
+  padding: 0.3rem 0.3rem;
+  align-items: center;
+  position: relative;
+}
+.moneybg{
+  background: linear-gradient(to right, #2b32b2, #1488cc);
+  opacity: 0.8;
+  
+}
+
+/* services */
+.services{
+  background-color: #f2f2f2;
+  padding: 50px 0; 
+}
+.about span,.contactus span,.services span{
+  color: #1488cc;
+}
+.services .card img{
+  width: auto;
+  height: 30vh;
+  padding: 30px 30px;
+    
+}
+
+.about img {
+background-size: cover;
+padding: 0px 50px;
+
+}
+.about p{
+  color:rgb(160, 160, 160);
+  text-align: center;
+
+}
+.hero .herobg{
+  height: 600px;
+  width:auto;
+  background: url(../Images/herobg.jpg) no-repeat;
+  background-size: cover;
+  z-index: 5000;
+  background-color:#f2f2f2 ;
+      margin: 0px -15px;
+  
+}
