@@ -14,4 +14,4 @@ Host the website at 000webhost, github.io, heroku app or any other free hosting 
 Technologies Used
 FRONT END: HTML, CSS, JavaScript, Bootstrap 
 BACK END: PHP DATABASE: MySQL
-website link:https://abhidj24.000webhostapp.com/
+
